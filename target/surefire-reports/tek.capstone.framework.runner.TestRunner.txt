@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: tek.capstone.framework.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 10.983 s <<< FAILURE! - in tek.capstone.framework.runner.TestRunner
+Retail Account Page.Verify User can update Profile Information  Time elapsed: 9.343 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.96 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome 
+Host info: host: 'Sapogmays-MacBook-Air.local', ip: '2601:144:200:92c0:0:0:0:304%en0'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.8', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at tek.capstone.framework.config.ChromeBrowser.openBrowser(ChromeBrowser.java:12)
+	at tek.capstone.framework.base.BaseSetup.setupBrowser(BaseSetup.java:56)
+	at tek.capstone.framework.base.BaseUlTest.setupTests(BaseUlTest.java:12)
+
+Retail Account Page.Verify User can update Profile Information  Time elapsed: 9.347 s  <<< ERROR!
+java.lang.NullPointerException
+	at tek.capstone.framework.utilities.CommonUtility.takeScreenShotAsBytes(CommonUtility.java:65)
+	at tek.capstone.framework.base.BaseUlTest.closeTests(BaseUlTest.java:19)
+
